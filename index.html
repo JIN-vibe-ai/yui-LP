@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>結（ゆい）｜のこす・たくす 終活ノート</title>
+<meta name="description" content="人生の記録・大切な人へのメッセージ・もしものときの手続きまで。想いと足あとを“世界にひとつの一冊”にまとめる終活ノート。データは端末内に保存。無料で使えます。" />
+<meta property="og:title" content="結（ゆい）｜のこす・たくす 終活ノート" />
+<meta property="og:description" content="大切な人へ、想いと足あとを、のこす。思い出の地図・未来への手紙・自治体別のやることリストまで。端末内保存で安心。" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2036%2036%27%3E%3Crect%20width%3D%2736%27%20height%3D%2736%27%20rx%3D%278%27%20fill%3D%27%232E4A3D%27%2F%3E%3Cpath%20d%3D%27M18%2019%20C9%208%201.5%2014%207%2020%20C11%2024.5%2018%2022.5%2018%2019%27%20stroke%3D%27%23D9B877%27%20stroke-width%3D%271.7%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%2F%3E%3Cpath%20d%3D%27M18%2019%20C27%208%2034.5%2014%2029%2020%20C25%2024.5%2018%2022.5%2018%2019%27%20stroke%3D%27%23A7C3AE%27%20stroke-width%3D%271.7%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%2F%3E%3Cpath%20d%3D%27M13.5%2021.5%20L11%2031%27%20stroke%3D%27%23D9B877%27%20stroke-width%3D%271.7%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%2F%3E%3Cpath%20d%3D%27M22.5%2021.5%20L25%2031%27%20stroke%3D%27%23A7C3AE%27%20stroke-width%3D%271.7%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%2F%3E%3C%2Fsvg%3E" />
+<style>
+:root{
+  --paper:#F7F5F1; --card:#FFFFFF; --line:#E5E1D7; --ink:#23231F; --ink-soft:#6E6C64;
+  --pine:#2E4A3D; --pine-2:#3D5C4C; --pine-soft:#E7EDE8; --gold:#A9843F; --gold-soft:#EFE6D2;
+  --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.serif{font-family:var(--serif)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,245,241,.86);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.nav .in{display:flex;align-items:center;gap:12px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:30px;height:30px}
+.brand .bn{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.06em;color:var(--pine)}
+.brand .bt{font-size:10.5px;color:var(--ink-soft);letter-spacing:.08em;margin-left:1px}
+.nav .sp{flex:1}
+.nav a.link{display:none;font-size:13px;color:var(--ink-soft);text-decoration:none;margin:0 10px}
+.nav a.link:hover{color:var(--pine)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;border-radius:99px;text-decoration:none;border:none;cursor:pointer;font-family:var(--sans);transition:.18s}
+.btn-primary{background:var(--pine);color:#fff;padding:11px 20px;font-size:14px;box-shadow:0 4px 14px rgba(46,74,61,.24)}
+.btn-primary:hover{background:var(--pine-2);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--pine);border:1.5px solid var(--pine);padding:10px 18px;font-size:14px}
+.btn-ghost:hover{background:var(--pine-soft)}
+.btn-sm{padding:9px 16px;font-size:13px}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--pine) 0%,var(--pine-2) 68%,#33503f 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(217,184,119,.22),transparent 70%)}
+.hero .in{position:relative;padding:74px 0 84px;text-align:center}
+.hero .eyebrow{font-size:12.5px;letter-spacing:.22em;color:#D9CBA5;font-weight:700;margin-bottom:18px}
+.hero h1{font-family:var(--serif);font-size:clamp(30px,5.4vw,52px);line-height:1.4;margin:0 0 18px;font-weight:600;letter-spacing:.04em}
+.hero p.lead{font-size:clamp(14px,2.1vw,17px);color:#E6EEE8;max-width:40em;margin:0 auto 30px}
+.hero .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero .btn-primary{background:#fff;color:var(--pine);font-size:15.5px;padding:14px 28px}
+.hero .btn-primary:hover{background:#F3EEE2}
+.hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.6);font-size:15.5px;padding:13px 26px}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero .free{margin-top:16px;font-size:12.5px;color:#CFE0D5;letter-spacing:.04em}
+.hero-name{display:flex;flex-direction:column;align-items:center;gap:4px;margin:8px 0 4px}
+.hero-name .hn-kanji{font-family:var(--serif);font-size:clamp(44px,7.5vw,62px);color:#fff;font-weight:600;letter-spacing:.16em;line-height:1;text-shadow:0 2px 14px rgba(0,0,0,.22)}
+.hero-name .hn-yomi{font-size:clamp(11px,1.9vw,13.5px);letter-spacing:.44em;color:#D9CBA5;font-weight:700;text-indent:.44em}
+.hero-mark{margin:10px 0 24px;line-height:0}
+.hero-mark svg{width:clamp(124px,23vw,162px);height:auto}
+
+/* section */
+section{padding:64px 0}
+.sec-eyebrow{font-family:var(--serif);font-size:12.5px;color:var(--gold);font-weight:700;letter-spacing:.16em;text-align:center;margin-bottom:10px}
+.sec-title{font-family:var(--serif);font-size:clamp(22px,3.4vw,30px);color:var(--pine);text-align:center;margin:0 auto 12px;font-weight:600;letter-spacing:.03em;max-width:22em}
+.sec-sub{text-align:center;color:var(--ink-soft);font-size:14.5px;max-width:40em;margin:0 auto 40px}
+
+/* problem */
+.problem{background:#EFEBE3}
+.p-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:860px;margin:0 auto}
+.p-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 24px}
+.p-card .ic{font-size:26px}
+.p-card h3{font-family:var(--serif);font-size:18px;color:var(--pine);margin:12px 0 8px}
+.p-card p{font-size:13.6px;color:var(--ink-soft);margin:0}
+
+/* two doors */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:0 auto}
+.door{border-radius:18px;padding:30px 28px;border:1px solid var(--line);position:relative;overflow:hidden}
+.door.nokosu{background:linear-gradient(160deg,#FBFAF7,#F1EEE6)}
+.door.yaru{background:linear-gradient(160deg,#EEF3EF,#E4EDE6)}
+.door .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.08em;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.door.nokosu .tag{background:var(--gold-soft);color:#7A5A22}
+.door.yaru .tag{background:var(--pine-soft);color:var(--pine)}
+.door h3{font-family:var(--serif);font-size:21px;color:var(--pine);margin:0 0 10px}
+.door p{font-size:13.8px;color:var(--ink-soft);margin:0 0 14px}
+.door ul{margin:0;padding-left:18px;font-size:13.6px;color:var(--ink);line-height:1.9}
+.door ul li::marker{color:var(--gold)}
+
+/* features */
+.features{background:var(--pine);color:#fff}
+.features .sec-eyebrow{color:#D9CBA5}
+.features .sec-title{color:#fff}
+.features .sec-sub{color:#CFE0D5}
+.f-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.f-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:24px 22px}
+.f-card .ic{width:44px;height:44px;border-radius:12px;background:rgba(217,184,119,.18);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+.f-card h3{font-family:var(--serif);font-size:17px;margin:0 0 8px;color:#fff}
+.f-card p{font-size:13.2px;color:#D7E4DA;margin:0;line-height:1.75}
+.f-card .badge{display:inline-block;margin-top:12px;font-size:11px;font-weight:700;color:#E9D9B0;border:1px solid rgba(217,184,119,.5);border-radius:99px;padding:3px 10px}
+
+/* whynow */
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:900px;margin:0 auto}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;text-align:center}
+.stat .n{font-family:var(--serif);font-size:30px;color:var(--pine);font-weight:700;line-height:1.2}
+.stat .n small{font-size:15px}
+.stat .l{font-size:12.8px;color:var(--ink-soft);margin-top:8px;line-height:1.7}
+
+/* steps */
+.steps{background:#EFEBE3}
+.s-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;max-width:920px;margin:0 auto}
+.s-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 22px;text-align:center;position:relative}
+.s-card .no{width:40px;height:40px;border-radius:50%;background:var(--pine);color:#fff;font-family:var(--serif);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.s-card h3{font-family:var(--serif);font-size:16.5px;color:var(--pine);margin:0 0 8px}
+.s-card p{font-size:13.2px;color:var(--ink-soft);margin:0}
+
+/* privacy strip */
+.privacy{background:var(--pine-soft)}
+.privacy .in{display:flex;align-items:center;gap:22px;justify-content:center;flex-wrap:wrap;text-align:center}
+.privacy .ic{font-size:34px}
+.privacy .tx{max-width:34em}
+.privacy h3{font-family:var(--serif);font-size:20px;color:var(--pine);margin:0 0 6px}
+.privacy p{font-size:13.6px;color:var(--pine-2);margin:0}
+
+/* pricing */
+.price-card{max-width:440px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px 30px;text-align:center;box-shadow:0 10px 30px rgba(46,74,61,.08)}
+.price-card .amt{font-family:var(--serif);font-size:44px;color:var(--pine);font-weight:700}
+.price-card .amt small{font-size:16px;color:var(--ink-soft);font-weight:400}
+.price-card ul{list-style:none;padding:0;margin:18px 0 24px;text-align:left;font-size:13.8px}
+.price-card ul li{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;gap:9px}
+.price-card ul li:last-child{border-bottom:none}
+.price-card ul li::before{content:"✓";color:var(--gold);font-weight:800}
+
+/* faq */
+.faq-list{max-width:760px;margin:0 auto}
+.faq{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 20px;margin-bottom:12px}
+.faq summary{font-weight:700;color:var(--pine);font-size:14.5px;padding:12px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--gold);font-weight:700}
+.faq[open] summary::after{content:"−"}
+.faq p{font-size:13.4px;color:var(--ink-soft);margin:0 0 14px;line-height:1.8}
+
+/* contact / final cta */
+.final{background:linear-gradient(160deg,var(--pine),var(--pine-2));color:#fff;text-align:center}
+.final h2{font-family:var(--serif);font-size:clamp(24px,3.6vw,34px);margin:0 0 12px;letter-spacing:.04em}
+.final p.sub{color:#D7E4DA;font-size:15px;margin:0 auto 28px;max-width:34em}
+.final .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:38px}
+.final .btn-primary{background:#fff;color:var(--pine);font-size:15.5px;padding:14px 28px}
+.final .btn-primary:hover{background:#F3EEE2}
+.form-card{max-width:520px;margin:0 auto;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:26px 24px}
+.form-card h3{font-family:var(--serif);font-size:18px;margin:0 0 6px}
+.form-card p.note{font-size:12.5px;color:#CFE0D5;margin:0 0 16px}
+.form-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.form-row input{flex:1;min-width:220px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.95);color:var(--ink);border-radius:99px;padding:13px 18px;font-size:14px;font-family:var(--sans)}
+.form-row input:focus{outline:2px solid var(--gold)}
+.form-row button{background:var(--gold);color:#fff;padding:13px 24px;font-size:14px}
+.form-row button:hover{background:#946f31}
+.form-card small{display:block;margin-top:12px;font-size:11px;color:#B9CDBF}
+.line-btn{background:#06C755;color:#fff;padding:14px 28px;font-size:15px;box-shadow:0 4px 14px rgba(6,199,85,.32)}
+.line-btn:hover{background:#05b34c;transform:translateY(-1px)}
+.line-qr{display:inline-block;background:#fff;padding:12px;border-radius:14px;margin:2px auto 16px;box-shadow:0 5px 16px rgba(0,0,0,.16)}
+.line-qr img{display:block;width:150px;height:150px;border-radius:4px}
+.line-cta{display:flex;flex-direction:column;align-items:center;gap:2px}
+
+/* footer */
+.foot{background:#20342A;color:#A9BCAF;padding:34px 0 40px;font-size:12px;line-height:1.9}
+.foot .in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start}
+.foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.foot .fb .bn{font-family:var(--serif);font-size:16px;color:#EAF0EB;letter-spacing:.06em}
+.foot .src{max-width:60ch;color:#8FA396}
+.foot a{color:#CFE0D5}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:820px){
+  .p-grid,.doors,.f-grid,.stats,.s-grid{grid-template-columns:1fr}
+  .f-grid .f-card:nth-child(n){}
+  section{padding:52px 0}
+}
+@media (min-width:900px){ .nav a.link{display:inline} }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="wrap in">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <path d="M18 19 C9 8 1.5 14 7 20 C11 24.5 18 22.5 18 19" stroke="#A9843F" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M18 19 C27 8 34.5 14 29 20 C25 24.5 18 22.5 18 19" stroke="#2E4A3D" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M13.5 21.5 L11 31" stroke="#A9843F" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M22.5 21.5 L25 31" stroke="#2E4A3D" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      <span><span class="bn">結</span><span class="bt"> ゆい</span></span>
+    </a>
+    <div class="sp"></div>
+    <a class="link" href="#doors">2つの入り口</a>
+    <a class="link" href="#features">できること</a>
+    <a class="link" href="#price">料金</a>
+    <a class="btn btn-primary btn-sm" href="https://lin.ee/Z7ZOoIh" target="_blank" rel="noopener">LINEではじめる</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap in">
+    <div class="eyebrow reveal">のこす・たくす 終活ノート</div>
+    <div class="hero-name reveal"><span class="hn-kanji">結</span><span class="hn-yomi">ゆい</span></div>
+    <h1 class="reveal">大切な人へ、<br>想いと足あとを、のこす。</h1>
+    <div class="hero-mark reveal">
+      <svg viewBox="0 0 36 36" fill="none" role="img" aria-label="結（ゆい）結びマーク">
+        <path d="M18 19 C9 8 1.5 14 7 20 C11 24.5 18 22.5 18 19" stroke="#D9B877" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M18 19 C27 8 34.5 14 29 20 C25 24.5 18 22.5 18 19" stroke="#A7C3AE" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M13.5 21.5 L11 31" stroke="#D9B877" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M22.5 21.5 L25 31" stroke="#A7C3AE" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="lead reveal">人生の記録も、家族へのメッセージも、もしものときの手続きも。<br>“世界にひとつの一冊”にまとめる終活ノート、結（ゆい）。<br>書いて終わりにせず、手元に残る一冊にするところまで。</p>
+    <div class="cta reveal">
+      <a class="btn btn-primary" href="https://lin.ee/Z7ZOoIh" target="_blank" rel="noopener">LINEで無料ではじめる</a>
+      <a class="btn btn-ghost" href="#features">できることを見る</a>
+    </div>
+    <div class="free reveal">LINEの友だち追加だけ／アプリのダウンロード不要／データは端末内に保存</div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">こんな不安、ありませんか</div>
+    <h2 class="sec-title reveal">終活は「重い」。もしものときは、家族に「わからない」が残る。</h2>
+    <div class="p-grid">
+      <div class="p-card reveal">
+        <div class="ic">🕊️</div>
+        <h3>これから終活を始める本人</h3>
+        <p>やらなきゃと思っても、何から書けばいいか分からず、気持ちも重くて後回しに。エンディングノートを買っても、続かないまま引き出しの中へ。</p>
+      </div>
+      <div class="p-card reveal">
+        <div class="ic">📄</div>
+        <h3>遺されるご家族</h3>
+        <p>もしものとき、膨大な役所の手続きと「故人の想いが分からない」という二重の負担。何を・どこで・いつまでにやるのか、調べるだけで疲れてしまう。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO DOORS -->
+<section id="doors">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">結の考え方</div>
+    <h2 class="sec-title reveal">入り口を、「のこす本人」と「やること家族」で分けました。</h2>
+    <p class="sec-sub reveal">立場によって必要なことは違います。だから最初の一歩から、それぞれに最適な形で。</p>
+    <div class="doors">
+      <div class="door nokosu reveal">
+        <span class="tag">🖋 本人がのこす</span>
+        <h3>のこすノート・思い出の地図</h3>
+        <p>資産や希望、家族へのメッセージを、無理なく少しずつ。書くほどに、あなたの物語が形になります。</p>
+        <ul>
+          <li>約20テーマ・150項目のノート</li>
+          <li>思い出の地図（訪れた場所と写真）</li>
+          <li>未来への手紙・追悼メモリアル</li>
+          <li>生年月日から「生きた日数」を表示</li>
+        </ul>
+      </div>
+      <div class="door yaru reveal">
+        <span class="tag">📋 遺族のやること</span>
+        <h3>自治体別・やることリスト</h3>
+        <p>お住まいの市区町村を選ぶだけで、手続きが「順番・期限つき」で自動表示。迷わず、抜け漏れなく。</p>
+        <ul>
+          <li>都道府県 → 市区町村を選ぶだけ</li>
+          <li>手続き順・期限つきのタスク</li>
+          <li>葬祭費など“実際の金額”も表示</li>
+          <li>この一覧だけを印刷・PDF保存</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">できること</div>
+    <h2 class="sec-title reveal">ただ書くノートでは終わらない。</h2>
+    <p class="sec-sub reveal">情緒の体験から、実務の手続き、そして手元に残る一冊まで。</p>
+    <div class="f-grid">
+      <div class="f-card reveal">
+        <div class="ic">🗺️</div>
+        <h3>思い出の地図</h3>
+        <p>人生の足あとを地図に置くと、距離や記憶ごとよみがえる。国内も海外も、写真と言葉を添えて残せます。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="ic">✉️</div>
+        <h3>未来への手紙・追悼</h3>
+        <p>誰に・いつ渡すかを添えて、家族へのメッセージを残す。追悼メモリアルのページも用意しています。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="ic">🏛️</div>
+        <h3>自治体別の実データ</h3>
+        <p>葬祭費・窓口・期限を、公式で一件ずつ確認した実データで表示。各項目は公式ページへも飛べます。</p>
+        <span class="badge">全国97市／47都道府県を検証</span>
+      </div>
+      <div class="f-card reveal">
+        <div class="ic">🔒</div>
+        <h3>端末内に保存</h3>
+        <p>入力した内容はお使いの端末内に保存。外部サーバーへの送信はありません。プライバシーを最優先。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="ic">📖</div>
+        <h3>装丁版PDF</h3>
+        <p>表紙・目次・署名まで備えた“世界に一冊”の装丁版PDFに。印刷して手元に残せます。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="ic">📱</div>
+        <h3>ホーム画面に追加</h3>
+        <p>スマホのホーム画面に追加すれば、アプリのように起動。オフラインでも開けます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY NOW -->
+<section id="whynow">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">なぜ今か</div>
+    <h2 class="sec-title reveal">「備える」が当たり前になる、転換点。</h2>
+    <div class="stats">
+      <div class="stat reveal"><div class="n">160<small>万人超</small></div><div class="l">2024年の死亡数は過去最多（厚労省・人口動態統計）。多死社会が本格化。</div></div>
+      <div class="stat reveal"><div class="n">2024.4</div><div class="l">相続登記が義務化。手続きの負担と期限が、遺された家族に直接のしかかる。</div></div>
+      <div class="stat reveal"><div class="n">デジタル<small>遺品</small></div><div class="l">スマホ・ネット口座・サブスク。IDやパスワードの引き継ぎ需要が急増。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps" id="steps">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">使い方</div>
+    <h2 class="sec-title reveal">3ステップで、はじめられます。</h2>
+    <div class="s-grid">
+      <div class="s-card reveal"><div class="no">1</div><h3>入り口を選ぶ</h3><p>「のこす本人」か「やること家族」か。あなたの立場に合わせて選ぶだけ。</p></div>
+      <div class="s-card reveal"><div class="no">2</div><h3>書く・調べる</h3><p>ノートに少しずつ書く。または市区町村を選んでやることを確認する。</p></div>
+      <div class="s-card reveal"><div class="no">3</div><h3>一冊に残す</h3><p>装丁版PDFにして印刷。家族に渡せる形で、想いも手続きも手元へ。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY STRIP -->
+<section class="privacy">
+  <div class="wrap in">
+    <div class="ic">🔒</div>
+    <div class="tx">
+      <h3>大切な情報だから、端末の中だけで。</h3>
+      <p>資産やパスワードなど、繊細な内容を扱うからこそ、結は入力データを端末内に保存し、外部へ送信しません。あなたの一冊は、あなたのものです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="price">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">料金</div>
+    <h2 class="sec-title reveal">本体は、無料で使えます。</h2>
+    <div class="price-card reveal">
+      <div class="amt">¥0 <small>／ 本体無料</small></div>
+      <ul>
+        <li>のこすノート（約150項目）</li>
+        <li>思い出の地図・未来への手紙・追悼</li>
+        <li>自治体別やることリスト（実データ）</li>
+        <li>装丁版PDFの作成・印刷</li>
+        <li>LINEの友だち追加だけ・端末内に保存</li>
+      </ul>
+      <a class="btn btn-primary" href="https://lin.ee/Z7ZOoIh" target="_blank" rel="noopener" style="width:100%">LINEで無料ではじめる</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:#EFEBE3">
+  <div class="wrap">
+    <div class="sec-eyebrow reveal">よくある質問</div>
+    <h2 class="sec-title reveal">気になることに、お答えします。</h2>
+    <div class="faq-list">
+      <details class="faq reveal"><summary>本当に無料ですか？登録は必要ですか？</summary><p>本体は無料でお使いいただけます。アカウント登録やアプリのダウンロードは不要で、ブラウザですぐに始められます。</p></details>
+      <details class="faq reveal"><summary>入力した内容はどこに保存されますか？</summary><p>お使いの端末（ブラウザ）内に保存され、外部サーバーへは送信されません。別の端末とは自動同期されないため、大切な内容はPDFに出力して保管することをおすすめします。</p></details>
+      <details class="faq reveal"><summary>自治体別の金額は正確ですか？</summary><p>葬祭費などの金額は、各市区町村・各都道府県の後期高齢者医療広域連合の公式ページで一件ずつ確認しています。確認できなかった一部は、推測せず空欄にして「窓口で確認」と明記しています。</p></details>
+      <details class="faq reveal"><summary>スマホでも使えますか？</summary><p>はい。スマホ・タブレット・PCで使えます。スマホではホーム画面に追加すると、アプリのように起動でき、オフラインでも開けます。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA + CONTACT -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <h2 class="reveal">今日から、少しずつ。</h2>
+    <p class="sub reveal">大切な人へ、想いと足あとを。まずは触れてみてください。</p>
+    <div class="form-card reveal">
+      <h3>LINEで、無料ではじめる</h3>
+      <p class="note">公式LINEを友だち追加すると、アプリをお届けします。新機能やお知らせもLINEでご案内します。</p>
+      <a class="btn line-btn" href="https://lin.ee/Z7ZOoIh" target="_blank" rel="noopener">LINEで友だち追加してはじめる</a>
+      <small>友だち追加後、LINEからアプリのご案内が届きます。</small>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap in">
+    <div>
+      <div class="fb">
+        <svg viewBox="0 0 36 36" fill="none" width="26" height="26" aria-hidden="true">
+          <path d="M18 19 C9 8 1.5 14 7 20 C11 24.5 18 22.5 18 19" stroke="#D9B877" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M18 19 C27 8 34.5 14 29 20 C25 24.5 18 22.5 18 19" stroke="#A7C3AE" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M13.5 21.5 L11 31" stroke="#D9B877" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M22.5 21.5 L25 31" stroke="#A7C3AE" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+        <span class="bn">結（ゆい）</span>
+      </div>
+      <div>大切な人へ、想いと足あとを、のこす。</div>
+    </div>
+    <div class="src">
+      出典：厚生労働省「令和6年 人口動態統計」（死亡数1,605,378人）。相続登記の申請義務化は2024年4月施行。葬祭費等の金額は各市区町村・各都道府県後期高齢者医療広域連合の公式サイトで確認（2026年7月時点）。<br>
+      ※本サービスは医療・法務・税務の助言を行うものではありません。手続きの詳細は各窓口でご確認ください。
+    </div>
+  </div>
+</footer>
+
+<script>
+/* スクロールで順にフェードイン */
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(el){el.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold:0.12 });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
